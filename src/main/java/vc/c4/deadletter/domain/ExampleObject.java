@@ -4,24 +4,18 @@ import java.util.Date;
 
 public class ExampleObject {
 
-  private Date date = new Date();
+	private Date date = new Date();
 
-  public ExampleObject() {
-  }
+	public Date getDate() {
+		return date;
+	}
 
-  @Override
-  public String toString() {
-    return "ExampleObject{" +
-        "date= " + date +
-        '}';
-  }
+	public void setDate(Date date) {
+		this.date = date;
+	}
 
-  public Date getDate() {
-    return date;
-  }
-
-  public void setDate(Date date) {
-    this.date = date;
-  }
-
+	@Override
+	public String toString() {
+		return "ExampleObject{" + "date= " + date + '}';
+	}
 }
